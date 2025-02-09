@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    
+     <!-- Header Start -->
+     <header class="bg-transparent relative top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-blue-700 block py-6">arnoldrubben</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out  origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left "></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px]
+                    w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-blue-700 text-base py-2 mx-8 flex
+                                group-hover:text-green-500">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-blue-700 text-base py-2 mx-8 flex
+                                group-hover:text-green-500">Tentang Saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio" class="text-blue-700 text-base py-2 mx-8 flex
+                                group-hover:text-green-500">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#clients" class="text-blue-700 text-base py-2 mx-8 flex
+                                group-hover:text-green-500">Clients</a>
+                            </li>
+                            <li class="group">
+                                <a href="#blogs" class="text-blue-700 text-base py-2 mx-8 flex
+                                group-hover:text-green-500">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="#blogs" class="text-blue-700 text-base py-2 mx-8 flex
+                                group-hover:text-green-500">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+     </header>
+    <!-- Header End -->
+
+    <!-- Main Section Start -->
+     <main class="container mt-28 mx-auto">
+        <!-- flex card profile -->
+         <h2 class="text-center my-10 text-4xl text-black">Meet our People</h2>
+        <section class="">
+            <div class="bg-white max-w-md rounded-xl shadow-lg overflow-hidden mb-10">
+                <img src="./public/img/samsung.jpg" class="w-full" alt="Keyboard Mechanical">
+                <div class="px-4">
+                    <h4 class="text-xl font-bold mt-3">
+                        Mechanical Keyboard
+                    </h4>
+                    <span class="text-sm font-semibold text-slate-400">2 Months ago</span>                          
+                    <p class="font-medium text-slate-600 text-base mb-4 mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eius tenetur inventore illo adipisci laudantium.</p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#tag1</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#tag2</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#tag3</span>
+                </div>
+            </div>
+        </section>
+     </main>
+    <!-- Main Section end -->
+
+    <script src="./public/js/script.js"></script>
 </body>
 </html>
